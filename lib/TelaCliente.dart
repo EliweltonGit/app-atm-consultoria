@@ -56,6 +56,27 @@ class _TelaClienteState extends State<TelaCliente> {
           ),
         ),
       ),
-    );;
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightGreen,
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.copyright,
+                color: Colors.white,
+              ),
+              Text("ATM - Consultoria",
+                style: TextStyle(
+                    color: Colors.white
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

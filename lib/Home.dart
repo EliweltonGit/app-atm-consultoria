@@ -48,11 +48,11 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("ATM Consultoria"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.lightGreen,
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(top: 150),
+          padding: EdgeInsets.only(top: 125),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -94,7 +94,27 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-        
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightGreen,
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.copyright,
+                color: Colors.white,
+              ),
+              Text("ATM - Consultoria",
+              style: TextStyle(
+                color: Colors.white
+              ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
